@@ -1,0 +1,23 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+@font-face {
+  font-family: 'Apercu';
+  src: url('../src//assets//fonts/Apercu.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
