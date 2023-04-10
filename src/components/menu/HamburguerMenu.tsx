@@ -5,14 +5,18 @@ import {
   MenuIcon,
   Nav,
   NavLink,
+  NavLink2,
 } from './HamburguerMenu.styles'
+import { Button } from '../button/Button'
+import { Data, lang } from '../../translations/PT-Translations'
 
 interface IMenu {
   open: boolean
   setOpen: (setOpen: boolean) => void
+  lang: lang
 }
 
-export const BurgerMenu: FC<IMenu> = ({ open, setOpen }) => {
+export const BurgerMenu: FC<IMenu> = ({ open, setOpen, lang }) => {
   const handleClick = () => {
     setOpen(!open)
   }
@@ -26,17 +30,20 @@ export const BurgerMenu: FC<IMenu> = ({ open, setOpen }) => {
       </MenuIcon>
       <Nav open={open}>
         <NavLink onClick={handleClick} href="#about">
-          Sobre
+          {Data[lang].about.separator}
         </NavLink>
         <NavLink onClick={handleClick} href="#practiceArea">
-          Área de Práticas
+          {Data[lang].practiceArea.title}
         </NavLink>
         <NavLink onClick={handleClick} href="#team">
-          Equipa
+          {Data[lang].team.separator}
         </NavLink>
         <NavLink onClick={handleClick} href="#contact">
-          Contactos
+          {Data[lang].contact.separator}
         </NavLink>
+        <NavLink2 onClick={handleClick} href="#contactForm">
+          {Data[lang].button.title}
+        </NavLink2>
       </Nav>
     </Container>
   )

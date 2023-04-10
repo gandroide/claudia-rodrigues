@@ -10,7 +10,7 @@ export const Container = styled('div')`
   font-family: Apercu;
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 100;
   &::after {
     background-color: black;
     position: fixed;

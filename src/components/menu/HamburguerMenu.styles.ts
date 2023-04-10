@@ -66,15 +66,15 @@ export const Nav = styled.nav<IState>`
 `
 
 export const NavLink = styled.a`
-  font-size: 2rem;
+  font-size: 24px;
   font-weight: bold;
-  letter-spacing: 0.5rem;
+  /* letter-spacing: 0.5rem; */
   color: #fff;
   text-decoration: none;
   transition: color 0.3s linear;
 
   &:hover {
-    color: #333;
+    color: #aaa;
   }
 
   @media (min-width: 1100px) {
@@ -83,5 +83,23 @@ export const NavLink = styled.a`
     padding: 2rem 0;
     width: 100%;
     display: block;
+  }
+`
+export const NavLink2 = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: #e9c680;
+  padding: 10px 50px 10px 50px;
+  color: black;
+  font-family: Apercu;
+  width: 100%;
+  max-width: 325px;
+  border: 1px solid transparent;
+  :hover {
+    background-color: transparent;
+    color: #e9c680;
+    border: 1px solid #e9c680;
   }
 `

@@ -8,6 +8,7 @@ import {
   IconContainer,
   ContainerDivider,
   SliderContainer,
+  SliderWrapper,
 } from './Contact.styles'
 import { IIsMobile } from '../../interfaces'
 import Swiper from '../../components/swiper/Swiper'
@@ -48,11 +49,11 @@ export const Contact: FC<IIsMobile> = ({ lang }) => {
           </ContactZone>
         </ContainerDivider>
       </div>
-      <div>
+      <SliderWrapper>
         <SliderContainer>
           <Swiper />
         </SliderContainer>
-      </div>
+      </SliderWrapper>
     </Container>
   )
 }

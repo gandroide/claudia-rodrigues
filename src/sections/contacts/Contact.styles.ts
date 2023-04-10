@@ -9,6 +9,7 @@ export const Container = styled('div')`
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+
   @media screen and (min-width: 1100px) {
     flex-direction: row;
   }
@@ -51,5 +52,15 @@ export const SliderContainer = styled('div')`
   max-width: 550px;
   @media (!min-width: 1100px) {
     width: 80%;
+  }
+`
+
+export const SliderWrapper = styled('div')`
+  display: flex;
+  justify-content: center;
+
+  & .swiper-button-prev,
+  & .swiper-button-next {
+    color: #fff;
   }
 `

@@ -308,7 +308,7 @@ export const Data: ILanguage = {
     team: {
       separator: 'Equipa',
       title:
-        'Compromoisso de rigor e profissionalismo, na procura das melhores soluções jurídicas.',
+        'Compromisso de rigor e profissionalismo, na procura das melhores soluções jurídicas.',
       jobTitle: [
         'Advogada',
         'Advogada Estagiária',

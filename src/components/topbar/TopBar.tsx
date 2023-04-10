@@ -37,7 +37,7 @@ export const TopBar: FC<ITobar> = ({ isMobile, lang, setLang }) => {
       </LogoContainer>
       {isMobile ? (
         <div>
-          <BurgerMenu open={open} setOpen={handleOpen} />
+          <BurgerMenu open={open} setOpen={handleOpen} lang={lang} />
         </div>
       ) : (
         <>
