@@ -8,9 +8,9 @@ export const Container = styled('div')`
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
-  @media (!min-width: 1100px) {
-    flex-direction: column;
+  flex-direction: column;
+  @media screen and (min-width: 1100px) {
+    flex-direction: row;
   }
 `
 
@@ -47,7 +47,8 @@ export const ContainerDivider = styled('div')`
   }
 `
 export const SliderContainer = styled('div')`
-  width: 650px;
+  width: 100%;
+  max-width: 550px;
   @media (!min-width: 1100px) {
     width: 80%;
   }
