@@ -6,14 +6,14 @@ import PingIcon from '../../../assets/icons/cardsIcons/PingIcon'
 import CardIcon from '../../../assets/icons/cardsIcons/CardIcon'
 import FolderIcon from '../../../assets/icons/cardsIcons/FolderIcon'
 import PapperIcon from '../../../assets/icons/cardsIcons/PaperIcon'
-import MetricIcon from '../../../assets/icons/cardsIcons/metricIcon'
 import GraphicsIcon from '../../../assets/icons/cardsIcons/GraphicsIcon'
 import BookIcon from '../../../assets/icons/cardsIcons/BookIcon'
 import PencilIcon from '../../../assets/icons/cardsIcons/PencilIcon'
+import MetricIcon from '../../../assets/icons/cardsIcons/MetricIcon'
 
 export const Grid: FC<IIsMobile> = ({ lang, isMobile }) => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 sm:px-2 px-8 md:grid-cols-3 lg:grid-col-4 sm:grid-col-1 gap-3 md:px-2 lg:px-40  ">
+    <div className="grid grid-cols-1 sm:grid-cols-1 sm:px-2 px-8 md:grid-cols-3 lg:grid-col-4 sm:grid-col-1 gap-3 md:px-2 lg:px-40  ">
       <div className="grid gap-4">
         {/* inicio */}
         <div className="my-2 ">

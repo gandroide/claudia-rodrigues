@@ -73,7 +73,7 @@ export const ContactForm: FC<IIsMobile> = ({ isMobile, lang }) => {
                   </InputContainer>
                 </div>
                 {!isMobile ? (
-                  <Require>* {Data[lang].contactForm.required}</Require>
+                  <Require> {Data[lang].contactForm.required}</Require>
                 ) : null}
               </LeftSide>
               <RightSide>
@@ -110,7 +110,7 @@ export const ContactForm: FC<IIsMobile> = ({ isMobile, lang }) => {
           <Button title="enviar" type="secondary" />
         </ButtonContainer>
       </From>
-      {isMobile ? <Require>* {Data[lang].contactForm.required}</Require> : null}
+      {isMobile ? <Require>{Data[lang].contactForm.required}</Require> : null}
     </Container>
   )
 }
