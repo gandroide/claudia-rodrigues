@@ -5,6 +5,10 @@ export const Container = styled('div')`
   padding: 0 25px;
   font-family: Apercu;
   background: #f4f4f4;
+  padding: 0 25px;
+  @media screen and (min-width: 1100px) {
+    padding: 0 100px;
+  }
 `
 
 export const DescriptionContainer = styled('h1')`

@@ -5,8 +5,9 @@ export const Container = styled('div')`
   font-family: Apercu;
   display: flex;
   margin-bottom: 50px;
-  @media (min-width: 1100px) {
-    padding: 0px 140px 0px 50px;
+  padding: 0 10px;
+  @media screen and (min-width: 1100px) {
+    padding: 0 100px;
     justify-content: space-between;
   }
 `

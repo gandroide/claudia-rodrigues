@@ -10,10 +10,12 @@ import GraphicsIcon from '../../../assets/icons/cardsIcons/GraphicsIcon'
 import BookIcon from '../../../assets/icons/cardsIcons/BookIcon'
 import PencilIcon from '../../../assets/icons/cardsIcons/PencilIcon'
 import MetricIcon from '../../../assets/icons/cardsIcons/MetricIcon'
+import TreeIcon from '../../../assets/icons/cardsIcons/TreeIcon'
+import DolarIcon from '../../../assets/icons/cardsIcons/DolarIcon'
 
 export const Grid: FC<IIsMobile> = ({ lang, isMobile }) => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-1 sm:px-2 px-8 md:grid-cols-3 lg:grid-col-4 sm:grid-col-1 gap-3 md:px-2 lg:px-40  ">
+    <div className="grid grid-cols-1 sm:grid-cols-1 sm:px-2 px-8 md:grid-cols-3 lg:grid-cols-3 sm:grid-col-1 gap-3 md:px-2 lg:px-10  ">
       <div className="grid gap-4">
         {/* inicio */}
         <div className="my-2 ">
@@ -82,7 +84,9 @@ export const Grid: FC<IIsMobile> = ({ lang, isMobile }) => {
         <div className="my-2">
           <div className="shadow-md rounded-md bg-white  h-full">
             <div className="flex m-2">
-              <div className="px-2  flex items-center">icon</div>
+              <div className="px-2  flex items-center">
+                <DolarIcon />
+              </div>
               <Title>{Data[lang].cardsZone.card3.title}</Title>
             </div>
             {!isMobile ? (
@@ -275,7 +279,9 @@ export const Grid: FC<IIsMobile> = ({ lang, isMobile }) => {
         <div className="my-2">
           <div className="shadow-md rounded-md bg-white  h-full">
             <div className="flex m-2">
-              <div className="px-2  flex items-center">icon</div>
+              <div className="px-2  flex items-center">
+                <TreeIcon />
+              </div>
               <Title>{Data[lang].cardsZone.card9.title}</Title>
             </div>
             {!isMobile ? (

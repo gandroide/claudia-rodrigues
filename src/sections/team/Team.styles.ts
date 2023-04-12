@@ -4,10 +4,13 @@ export const Container = styled('div')`
   display: flex;
   width: 100%;
   flex-direction: column;
-  padding: 0 25px;
   font-family: Apercu;
   background: #f4f4f4;
   margin-top: 30px;
+  padding: 0 25px;
+  @media screen and (min-width: 1100px) {
+    padding: 0 100px;
+  }
 `
 
 export const TeamDescription = styled('h1')`
@@ -35,7 +38,9 @@ export const TeamZone = styled('div')`
   flex-direction: column;
   width: 100%;
   justify-content: center;
+  align-items: center;
   @media (min-width: 1100px) {
+    align-items: unset;
     padding: 0 30px;
     font-size: 36px;
     flex-direction: row;
