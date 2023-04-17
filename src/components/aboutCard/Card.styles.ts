@@ -25,8 +25,8 @@ export const Icon = styled('div')`
   margin-right: 10px;
 `
 
-export const Title = styled('h1')`
-  font-size: 35px;
+export const Title = styled('p')`
+  font-size: 30px;
   margin-top: 16px;
   margin-bottom: 8px;
   color: #313c52;

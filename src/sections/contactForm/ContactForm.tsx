@@ -20,6 +20,8 @@ import {
 import emailjs from '@emailjs/browser'
 import { IIsMobile } from '../../interfaces'
 import { Data } from '../../translations/PT-Translations'
+import DecorationPointsMobile from '../../assets/DecorationPointsMobile'
+import DecorationPoints from '../../assets/DecorationPoints'
 
 export const ContactForm: FC<IIsMobile> = ({ isMobile, lang }) => {
   const handleSubmit = async (e: any) => {
@@ -111,6 +113,31 @@ export const ContactForm: FC<IIsMobile> = ({ isMobile, lang }) => {
         </ButtonContainer>
       </From>
       {isMobile ? <Require>{Data[lang].contactForm.required}</Require> : null}
+      {/* {isMobile ? (
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'end',
+            marginRight: '30%',
+            paddingTop: '50px',
+          }}
+        >
+          <DecorationPointsMobile />
+        </div>
+      ) : (
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'start',
+            marginRight: '30%',
+            paddingTop: '50px',
+            width: '100%',
+            marginLeft: '350px',
+          }}
+        >
+          <DecorationPoints />
+        </div>
+      )} */}
     </Container>
   )
 }

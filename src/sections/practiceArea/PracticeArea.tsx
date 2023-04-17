@@ -6,19 +6,20 @@ import {
   Container,
   DescriptionText,
   SpanSkill,
-  ListSkill,
   Skills,
-  ULContainer,
+  SeparatorText,
 } from './PracticeArea.styles'
 import { Data } from '../../translations/PT-Translations'
 import { IIsMobile } from '../../interfaces'
 import { Grid } from '../../components/flowbite/grid/Grid'
+import DecorationPointsMobile from '../../assets/DecorationPointsMobile'
+import DecorationPoints from '../../assets/DecorationPoints'
 
 export const PracticeArea: FC<IIsMobile> = ({ isMobile, lang }) => {
   return (
     <Container id="practiceArea">
       <DescriptionText>
-        {Data[lang].practiceArea.title}
+        <SeparatorText>{Data[lang].practiceArea.title}</SeparatorText>
         <span>_</span>
       </DescriptionText>
       <div>
@@ -37,6 +38,27 @@ export const PracticeArea: FC<IIsMobile> = ({ isMobile, lang }) => {
       <div>
         <Grid lang={lang} isMobile={isMobile} />
       </div>
+      {isMobile ? (
+        <div
+          style={{
+            display: 'flex',
+            marginTop: '40px',
+            marginLeft: '40px',
+            justifyContent: 'start',
+          }}
+        >
+          <DecorationPointsMobile />
+        </div>
+      ) : (
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+          }}
+        >
+          <DecorationPoints />
+        </div>
+      )}
     </Container>
   )
 }

@@ -15,7 +15,7 @@ import DolarIcon from '../../../assets/icons/cardsIcons/DolarIcon'
 
 export const Grid: FC<IIsMobile> = ({ lang, isMobile }) => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-1 sm:px-2 px-8 md:grid-cols-3 lg:grid-cols-3 sm:grid-col-1 gap-3 md:px-2 lg:px-10  ">
+    <div className="grid grid-cols-1 sm:grid-cols-1 sm:px-2 px-8 md:grid-cols-3 lg:grid-cols-3 sm:grid-col-1 gap-1 md:px-2 lg:px-10  ">
       <div className="grid gap-4">
         {/* inicio */}
         <div className="my-2 ">

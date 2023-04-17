@@ -2,6 +2,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 import slider1 from '../../assets/slider1.jpg'
 import slider2 from '../../assets/slider2.jpg'
+import Landscape from '../../assets/Landscape.png'
 
 // Import Swiper styles
 
@@ -29,6 +30,11 @@ export default () => {
       <SwiperSlide>
         <div>
           <img src={slider2} alt="" />
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div>
+          <img src={Landscape} alt="" />
         </div>
       </SwiperSlide>
     </Swiper>

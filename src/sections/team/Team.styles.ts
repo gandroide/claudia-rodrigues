@@ -33,6 +33,12 @@ export const DescriptionText = styled('div')`
     padding: 0 50px 20px 50px;
   }
 `
+
+export const SeparatorText = styled('p')`
+  font-weight: bold;
+  font-size: 20px;
+`
+
 export const TeamZone = styled('div')`
   display: flex;
   flex-direction: column;

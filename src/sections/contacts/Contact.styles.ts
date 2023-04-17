@@ -4,12 +4,11 @@ export const Container = styled('div')`
   width: 100%;
   font-family: Apercu;
   background: #f4f4f4;
-  margin-top: 30px;
+  margin-top: 50px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   padding: 0 25px;
-
   @media screen and (min-width: 1100px) {
     padding: 0 100px;
     flex-direction: row;

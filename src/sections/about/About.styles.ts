@@ -22,9 +22,15 @@ export const DescriptionText = styled('div')`
   flex-direction: column;
   padding-bottom: 40px;
 `
+
+export const SeparatorText = styled('p')`
+  font-weight: bold;
+  font-size: 20px;
+`
+
 export const ImageContent = styled('img')`
-  width: 170px;
-  height: 200px;
+  width: 270px;
+  height: 300px;
   @media (min-width: 875px) {
     width: 300px;
     height: 350px;
@@ -34,6 +40,13 @@ export const ImageContent = styled('img')`
     height: 550px;
   }
 `
+export const Divider = styled('div')`
+  display: flex;
+  @media screen and (max-width: 880px) {
+    flex-direction: column-reverse;
+  }
+`
+
 export const SpanText = styled('p')`
   margin-bottom: 10px;
 `

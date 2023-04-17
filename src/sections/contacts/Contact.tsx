@@ -13,8 +13,10 @@ import {
 import { IIsMobile } from '../../interfaces'
 import Swiper from '../../components/swiper/Swiper'
 import { Data } from '../../translations/PT-Translations'
+import DecorationPointsMobile from '../../assets/DecorationPointsMobile'
+import DecorationPoints from '../../assets/DecorationPoints'
 
-export const Contact: FC<IIsMobile> = ({ lang }) => {
+export const Contact: FC<IIsMobile> = ({ lang, isMobile }) => {
   return (
     <Container id="contact">
       <div style={{ width: '100%' }}>

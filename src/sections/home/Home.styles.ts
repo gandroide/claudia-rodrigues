@@ -34,6 +34,7 @@ export const TextZone = styled('div')`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 35px;
 `
 
 export const Title = styled('h1')`

@@ -46,6 +46,11 @@ export const DescriptionText = styled('div')`
   }
 `
 
+export const SeparatorText = styled('p')`
+  font-weight: bold;
+  font-size: 20px;
+`
+
 export const Skills = styled('div')`
   display: flex;
   flex-direction: column;

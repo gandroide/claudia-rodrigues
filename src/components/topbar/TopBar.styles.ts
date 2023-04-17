@@ -18,7 +18,7 @@ export const Container = styled('div')`
     height: 100px;
     content: '';
     left: 0;
-    z-index: -1;
+    z-index: -100;
     opacity: 80%;
   }
   /* @media (min-width: 900px) {

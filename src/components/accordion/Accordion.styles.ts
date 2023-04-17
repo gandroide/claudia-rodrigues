@@ -6,6 +6,7 @@ export const AccordionContainer = styled.div`
   border-radius: 4px;
   margin-bottom: 16px;
   font-family: Apercu;
+  flex: 1;
   @media (min-width: 1100px) {
     /* width: 50%; */
   }
