@@ -120,7 +120,7 @@ export const Data: ILanguage = {
     },
     home: {
       title:
-        'Vamos defender os seus dereitos e fornecer a orientação jurídica que merece.',
+        'Vamos defender os seus direitos e fornecer a orientação jurídica que merece.',
       subTitle:
         'Entre em contacto connosco hoje e começaremos já a trablhar no seu processo.',
     },
