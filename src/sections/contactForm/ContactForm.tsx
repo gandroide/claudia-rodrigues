@@ -20,8 +20,8 @@ import {
 import emailjs from '@emailjs/browser'
 import { IIsMobile } from '../../interfaces'
 import { Data } from '../../translations/PT-Translations'
-import DecorationPointsMobile from '../../assets/DecorationPointsMobile'
-import DecorationPoints from '../../assets/DecorationPoints'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 export const ContactForm: FC<IIsMobile> = ({ isMobile, lang }) => {
   const handleSubmit = async (e: any) => {
@@ -37,14 +37,59 @@ export const ContactForm: FC<IIsMobile> = ({ isMobile, lang }) => {
       .then(
         (result) => {
           console.log(result.text)
+          toast.success(Data[lang].toastMessages.success, {
+            position: 'top-right',
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: 'light',
+          })
         },
         (error) => {
           console.log(error.text, 'aqui')
+          toast.error(Data[lang].toastMessages.error, {
+            position: 'top-right',
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: 'light',
+          })
         }
       )
   }
+
+  const notify = () =>
+    toast.success(Data[lang].toastMessages.success, {
+      position: 'top-right',
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: 'light',
+    })
+
   return (
     <Container id="contactForm">
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
       <Banner>{Data[lang].button.title}</Banner>
       <From action="" onSubmit={handleSubmit}>
         <FormContainer>

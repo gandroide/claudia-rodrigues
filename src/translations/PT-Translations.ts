@@ -5,6 +5,10 @@ type ILanguage = {
     button: {
       title: string
     }
+    toastMessages: {
+      success: string
+      error: string
+    }
     topbar: {
       about: string
       practiceArea: string
@@ -111,6 +115,10 @@ export const Data: ILanguage = {
     button: {
       title: 'entre em contacto aqui',
     },
+    toastMessages: {
+      success: 'Mensagem enviada',
+      error: 'Não foi possivel enviar sua mensagem',
+    },
     topbar: {
       about: 'Sobre',
       practiceArea: 'Áreas de Práctica',
@@ -131,7 +139,7 @@ export const Data: ILanguage = {
       paragraph1:
         'Cláudia Sofia Rodrigues, e a sua equipa, orgulham-se em presentar serviços jurídicos de excelência, onde os problemas dos seus clientes estão sempre em primeiro lugar.',
       paragraph2:
-        'Com vários anos de experiência, intervém em todos os campos da prática jurídica. Somos um escritório independiente, generalista, que conta com quase duas décadas de atividade na área do Direito',
+        'Com vários anos de experiência, intervém em todos os campos da prática jurídica. Somos um escritório independente, generalista, que conta com quase duas décadas de atividade na área do Direito',
       paragraph3:
         'Tem o seu empenho focado em prestar soluções eficazes e alcançar os melhores resultados possíveis, para defender e proteger os seus direitos com profissionalismo e dedicação.',
       paragraph4:
@@ -331,6 +339,10 @@ export const Data: ILanguage = {
   en: {
     button: {
       title: 'contact here',
+    },
+    toastMessages: {
+      success: 'Message sent',
+      error: 'Your message could not be sent',
     },
     topbar: {
       about: 'About',
