@@ -130,14 +130,14 @@ export const Data: ILanguage = {
       title:
         'Vamos defender os seus direitos e fornecer a orientação jurídica que merece.',
       subTitle:
-        'Entre em contacto connosco hoje e começaremos já a trablhar no seu processo.',
+        'Entre em contacto connosco e a nossa equipa jurídica começará já a trabalhar no seu processo.',
     },
     about: {
       separator: 'Sobre',
       title: 'Colocamos a experiência e conhecimento ao seu dispor.',
       subTitle: 'Entre em contacto hoje para agendar uma reunião.',
       paragraph1:
-        'Cláudia Sofia Rodrigues, e a sua equipa, orgulham-se em presentar serviços jurídicos de excelência, onde os problemas dos seus clientes estão sempre em primeiro lugar.',
+        'Cláudia Sofia Rodrigues, e a sua equipa, orgulham-se em prestar serviços jurídicos de excelência, onde os problemas dos seus clientes estão sempre em primeiro lugar.',
       paragraph2:
         'Com vários anos de experiência, intervém em todos os campos da prática jurídica. Somos um escritório independente, generalista, que conta com quase duas décadas de atividade na área do Direito',
       paragraph3:
@@ -147,18 +147,18 @@ export const Data: ILanguage = {
       paragraph5:
         'O nosso escritório encontra-se localizado no coração de Lisboan junto ao Saldanha.',
       paragraph6:
-        'Proporcionamos um ambiente acolhedor e profissional. No nosso escritório, encontra empenho em ofrecer o mais alto nível de serviço e representação.',
+        'Proporcionamos um ambiente acolhedor e profissional. No nosso escritório, encontra empenho em oferecer o mais alto nível de serviço e representação.',
     },
     practiceArea: {
       title: 'Áreas de Práctica',
       subTitle:
-        'Orgulho em ofrecer um vasto leque de serviços jurídicos, sempre com o compromisso de obter bons resultados.',
+        'Orgulho em oferecer um vasto leque de serviços jurídicos, sempre com o compromisso de obter bons resultados.',
       skillTitle: 'Apoio jurídico a particulares, empresas e condomínios.',
       firstSkill:
         ' - Cobrança de dívidas, recuperação de créditos e acordos de pagamentos.',
       secondSkill:
-        '- Contencioso / Direito Penal / Direito Civil / Direito de trabalho / Arrendamento / Família e Menores / Contra-ordenações / Direito Comercial / Direito Imobiliário / Direito das Sucessões / Serviços a Cidadãos estrangeiros / Direito Administrativo e Urbanismo',
-      thirdSkill: '- Atos Notariais de Advogado / Registos e Notariado',
+        '- Contencioso / Direito Penal / Direito Civil / Direito de trabalho / Arrendamento / Família e Menores / Contra-ordenações / Direito Comercial / Direito Imobiliário / Direito das Sucessões / Serviços a Cidadãos estrangeiros / Direito Administrativo e Urbanismo.',
+      thirdSkill: '- Atos Notariais de Advogado / Registos e Notariado.',
     },
     cardsZone: {
       card1: {
